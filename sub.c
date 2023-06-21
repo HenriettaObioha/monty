@@ -8,7 +8,7 @@
 void f_sub(stack_t **head, unsigned int counter)
 {
 	stack_t *aux;
-	int sub, nodes;
+	int sus, nodes;
 
 	aux = *head;
 	for (nodes = 0; aux != NULL; nodes++)
@@ -22,7 +22,7 @@ void f_sub(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	aux = *head;
-	sub = aux->next->n - aux->n;
+	sus = aux->next->n - aux->n;
 	*head = aux->next;
 	free(aux);
 }
